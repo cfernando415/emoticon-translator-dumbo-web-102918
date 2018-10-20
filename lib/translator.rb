@@ -16,11 +16,13 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   emoticons = load_library(file_path)
+  result = ""
   emoticons.each do |meaning, emoticons|
     if emoticons.has_key? emoticon
-      return emoticons[emoticon]
+      result = emoticons[emoticon]
     else
-      
+      result = "Sorry, that emoticon was not found"
+    end
   end
   
 end
