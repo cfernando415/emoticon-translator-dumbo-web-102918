@@ -32,7 +32,7 @@ def get_english_meaning(file_path, emoticon)
   emoticons = load_library(file_path)
   result = ""
   emoticons.each do |meaning, emoticons|
-    binding.pry
+    #binding.pry
     if emoticons.has_key? emoticon 
       result = emoticons[emoticon]
     else
