@@ -4,7 +4,11 @@ require 'pry'
 
 def load_library(file_path)
   # code goes here
+  emoticons = {}
   library = YAML.load_file(file_path)
+  library.each do |key, val|
+    binding.pry
+  end
   
 end
 
