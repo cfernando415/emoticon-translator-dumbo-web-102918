@@ -19,7 +19,8 @@ def get_japanese_emoticon(file_path, emoticon)
   emoticons.each do |meaning, emoticons|
     if emoticons.has_key? emoticon
       return emoticons[emoticon]
-    end
+    else
+      
   end
   
 end
