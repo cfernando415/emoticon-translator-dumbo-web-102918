@@ -9,9 +9,8 @@ def load_library(file_path)
   library.each do |key, val|
     emoticons["get_meaning"][val[1]] = key
     emoticons["get_meaning"][val[0]] = val[1]
-    binding.pry
   end
-  
+  emoticons
 end
 
 def get_japanese_emoticon(library, emoticon)
