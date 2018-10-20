@@ -31,12 +31,10 @@ def get_english_meaning(file_path, emoticon)
   # code goes here
   emoticons = load_library(file_path)
   result = ""
-  #emoticons.each do |meaning, emoticons|
-    if emoticons["get_meaning"].has_key? emoticon 
-      result = emoticons["get_meaning"][emoticon]
-    else
-      result = "Sorry, that emoticon was not found"
-    end
-  #end
+  if emoticons["get_meaning"].has_key? emoticon 
+    result = emoticons["get_meaning"][emoticon]
+  else
+    result = "Sorry, that emoticon was not found"
+  end
   result
 end
