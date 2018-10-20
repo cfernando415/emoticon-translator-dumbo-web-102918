@@ -34,8 +34,9 @@ def get_english_meaning(file_path, emoticon)
   emoticons.each do |meaning, emoticons|
     if emoticons.has_key? emoticon 
       result = emoticons[emoticon]
+    else
+      result = "Sorry, that emoticon was not found"
     end
-    #binding.pry
   end
   result
 end
